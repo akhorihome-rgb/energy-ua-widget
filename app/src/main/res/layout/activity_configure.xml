@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Світло offline — налаштування"
+            android:textSize="20sp" android:textStyle="bold" android:paddingBottom="12dp" />
+
+        <!-- ========== СЬОГОДНІ ========== -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Графік відключень на сьогодні" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Формат ЧЧ:ММ. Порожні рядки ігноруються." android:textSize="12sp" android:paddingBottom="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="1." />
+            <EditText android:id="@+id/et_from_1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="2." />
+            <EditText android:id="@+id/et_from_2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="3." />
+            <EditText android:id="@+id/et_from_3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="4." />
+            <EditText android:id="@+id/et_from_4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="5." />
+            <EditText android:id="@+id/et_from_5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="6." />
+            <EditText android:id="@+id/et_from_6" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_6" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingBottom="12dp">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="7." />
+            <EditText android:id="@+id/et_from_7" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_7" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- ========== ЗАВТРА ========== -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Графік відключень на завтра" android:textStyle="bold" android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Формат ЧЧ:ММ. Порожні рядки ігноруються." android:textSize="12sp" android:paddingBottom="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="1." />
+            <EditText android:id="@+id/et_from_t1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_t1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="2." />
+            <EditText android:id="@+id/et_from_t2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_t2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="3." />
+            <EditText android:id="@+id/et_from_t3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_t3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="4." />
+            <EditText android:id="@+id/et_from_t4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_t4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="5." />
+            <EditText android:id="@+id/et_from_t5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_t5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="6." />
+            <EditText android:id="@+id/et_from_t6" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_t6" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingBottom="12dp">
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="7." />
+            <EditText android:id="@+id/et_from_t7" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="з" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" – " android:paddingHorizontal="4dp" />
+            <EditText android:id="@+id/et_to_t7" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="до" android:inputType="time" android:maxLength="5" android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Підписи таймера -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Підпис таймера" android:textStyle="bold" android:layout_marginTop="4dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Коли світло є" android:textSize="12sp" />
+        <EditText android:id="@+id/et_label_off" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="До вимкнення:" android:textSize="14sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Коли світла немає" android:textSize="12sp" />
+        <EditText android:id="@+id/et_label_on" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="До увімкнення:" android:textSize="14sp" android:paddingBottom="8dp" />
+
+        <!-- Зовнішній вигляд -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Зовнішній вигляд" android:textStyle="bold" android:layout_marginTop="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Тема" />
+        <Spinner android:id="@+id/spinner_theme" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Колір фону (якщо автофон вимкнено)" />
+        <Spinner android:id="@+id/spinner_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <CheckBox android:id="@+id/cb_auto_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Автозміна фону (зелений / темний)" android:checked="false" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Колір коли світло є" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_auto_on" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Колір коли світла немає" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_auto_off" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <CheckBox android:id="@+id/cb_border" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Показувати окантовку" android:layout_marginTop="6dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Колір окантовки" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_border_color" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <!-- Сповіщення (два незалежні) -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Сповіщення" android:textStyle="bold" />
+
+        <CheckBox android:id="@+id/cb_notify1" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Перше сповіщення" android:checked="true" />
+        <Spinner android:id="@+id/spinner_notify1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Звук 1-го (системний)" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_sound1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <Button android:id="@+id/btn_pick_sound1" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Обрати свій звук для 1-го" android:textSize="13sp" />
+        <TextView android:id="@+id/tv_sound1_path" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="11sp" android:textColor="#888888" android:paddingBottom="4dp" />
+
+        <CheckBox android:id="@+id/cb_notify2" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Друге сповіщення" android:checked="true" android:layout_marginTop="8dp" />
+        <Spinner android:id="@+id/spinner_notify2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Звук 2-го (системний)" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_sound2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <Button android:id="@+id/btn_pick_sound2" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Обрати свій звук для 2-го" android:textSize="13sp" />
+        <TextView android:id="@+id/tv_sound2_path" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="11sp" android:textColor="#888888" android:paddingBottom="4dp" />
+
+        <CheckBox android:id="@+id/cb_vibrate" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Вібрація" android:checked="true" android:layout_marginTop="6dp" />
+
+        <!-- Піктограми -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Піктограми на віджеті та в шторці" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Коли світло є" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_icon_on" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Коли світла немає" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_icon_off" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <!-- Що показувати -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Що показувати" android:textStyle="bold" />
+        <CheckBox android:id="@+id/cb_icon" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Іконка (✓ / ✗)" android:checked="true" />
+        <CheckBox android:id="@+id/cb_timer" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Таймер" android:checked="true" />
+        <CheckBox android:id="@+id/cb_periods" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Список періодів" android:checked="true" />
+        <CheckBox android:id="@+id/cb_only_nearest" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Тільки найближчий період" android:checked="false" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Розміри тексту" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Іконка" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_s_icon" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Таймер" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_s_timer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Періоди" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_s_periods" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Кольори тексту" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Таймер" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_c_timer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Періоди" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_c_periods" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Вирівнювання / відступи" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Вирівнювання" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_align" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Відступ між рядками" android:textSize="12sp" />
+        <Spinner android:id="@+id/spinner_gap" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <Button android:id="@+id/btn_save" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Зберегти" android:layout_marginTop="20dp" android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
